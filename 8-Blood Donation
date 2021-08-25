@@ -1,0 +1,36 @@
+//25th August, 2021
+//Blood donation
+
+import java.util.*;
+
+public class Blood_donation
+{
+    public static void main(String[] args) 
+    {
+        int age;
+        float weight;
+        
+      //Input value    
+      Scanner scnr = new Scanner(System.in);
+      System.out.print("Age is : "); 
+	    age = scnr.nextInt();
+	    System.out.print("Weight is : "); 
+	    weight = scnr.nextFloat();
+
+        if(age > 18)
+        {
+            if(weight > 50)
+            {
+               System.out.println("Eligible to donate blood"); 
+            }
+            else
+            {
+                System.out.println("Not eligible to donate blood"); 
+            }
+        }
+        else
+        {
+            System.out.println("Not eligible to donate blood"); 
+        }
+    }
+}
