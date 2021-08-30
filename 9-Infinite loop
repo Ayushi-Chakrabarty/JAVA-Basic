@@ -1,3 +1,8 @@
+//It is helpful to process when number of inputs not given. 
+//To process unlimited number of inputs. 
+//User continuously gives input.
+//Stops when user manually enters the stopping condition.
+
 import java.io.*;
 
 public class HelloWorld 
