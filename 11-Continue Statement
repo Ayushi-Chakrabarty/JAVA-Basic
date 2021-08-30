@@ -1,0 +1,19 @@
+import java.util.*;
+
+class ContinueStatementDemo
+{
+    public static void main(String args[])
+    {
+        int a=0;
+        
+        while(a<10)
+        {
+            a++;
+            if(a==5)
+                continue;
+            
+            System.out.print("\n\tStatement" + a);
+        }
+        System.out.print("\n\tEnd of program");
+    }
+}
