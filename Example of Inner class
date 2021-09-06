@@ -1,0 +1,27 @@
+//Check once
+
+class Outer_Demo
+{
+    int num;
+    class inner_Demo 
+    {
+        public void print()
+        {
+            System.out.println("This is an inner class");
+        }
+    }
+    void display_Inner()
+    {
+        inner_Demo inner= new inner_Demo();
+        inner.print();
+    }
+}
+
+public class My_class
+{
+    public static void main(String args[])
+    {
+        Outer_Demo outer = new Outer_Demo();
+        outer.display_Inner();
+    }
+}
