@@ -25,4 +25,11 @@ class OuterClass
             //System.out.println("outer y = " + outer_y);
         }
     }
+
+
+    public static void main(String args[])
+    {
+        OuterClass.StaticNestedClass obj = new OuterClass.StaticNestedClass();
+        obj.display();
+    }
 }
