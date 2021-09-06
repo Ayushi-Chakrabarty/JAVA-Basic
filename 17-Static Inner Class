@@ -1,4 +1,5 @@
 //Example of Static Inner Class
+//Can access private and static members
 
 class TestOuter1
 {
