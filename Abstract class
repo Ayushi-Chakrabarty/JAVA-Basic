@@ -1,0 +1,32 @@
+//Abstract class concept
+
+abstract class base
+{
+    base()
+    {
+        System.out.println("Base class const");
+        
+    }
+    abstract void fun();
+}
+
+class derived extends base
+{
+    derived()
+    {
+        System.out.println("Derived class const");
+    }
+    
+    void fun()
+    {
+        System.out.println("abstract method");
+    }
+}
+
+public class Ab
+{
+    public static void main(String arg[])
+    {
+        derived d = new derived();
+    }
+}
