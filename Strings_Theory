@@ -1,0 +1,4 @@
+//Difference between StringBuffer
+//StringBuffer class - Introduced in the Java version 1.0, Threadsif (multiple threads does not operate simultaneously).
+//First order the thread 
+//StringBuilder class - Introduced in the Java version 1.5, more efficient
