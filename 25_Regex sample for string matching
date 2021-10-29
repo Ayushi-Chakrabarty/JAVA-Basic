@@ -1,0 +1,17 @@
+//Find "dog" at end of line
+import java.util.regex.*;
+
+class main
+{
+    public static void main(String args[])
+    {
+        Pattern pattern = Pattern.compile("dog$");
+        Matcher matcher = pattern.matcher("The quick brown dog jumps over the lazy dog");
+        
+        while(matcher.find())
+        {
+            System.out.format("Text \"%s\" found at %d to %d.%n", matcher.group(), matcher.start(), matcher.end());
+        }
+        
+    }
+}
