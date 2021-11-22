@@ -1,0 +1,27 @@
+class Car
+{
+    void model()
+    {
+        System.out.println("Car Model Name: XYZ");
+        
+    }
+}
+
+class Price extends Car
+{
+    void display()
+    {
+        System.out.println("Price of the car:700000");
+        
+    }
+}
+
+class Main
+{
+    public static void main(String args[])
+    {
+        Price p = new Price();
+        p.model();
+        p.display();
+    }
+}
