@@ -1,0 +1,49 @@
+// You are using Java
+class Student
+{
+    int regno;
+    String name;
+    int phy, che, bio, math;
+    int total;
+    float avg;
+    
+    void get(int r, String n, int m1, int m2, int m3, int m4)
+    {
+        regno = r;
+        name = n;
+        phy = m1;
+        che = m2;
+        bio = m3;
+        math = m4;
+    }
+    
+    void calculate()
+    {
+        total = phy+che+bio+math;
+        avg = (float)total/4;
+    }
+    
+    void display()
+    {
+        System.out.println("STUDENT DETAILS");
+        System.out.println("Roll no:" + regno);
+        System.out.println("Name:" + name);
+        System.out.println("Physics mark:" + phy);
+        System.out.println("Chemistry mark:" + che);
+        System.out.println("Biology mark:" + bio);
+        System.out.println("Maths mark:" + math);
+        System.out.println("Total:" + total);
+        System.out.println("Average:" + avg);
+    }
+}
+
+class Main
+{
+    public static void main(String[] arg)
+    {
+        Student ayushi = new Student();
+        ayushi.get(1001, "Ayushi Chakrabarty",95,95,90,100);
+        ayushi.calculate();
+        ayushi.display();
+    }
+}
