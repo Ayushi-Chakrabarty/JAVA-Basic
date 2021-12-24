@@ -1,0 +1,99 @@
+/* single / simple inheritance*/
+class Rectangle
+{
+    int arearectangle(int l,int b)
+    {
+        return (l*b);
+    }
+}
+class Triangle extends Rectangle
+{
+    double areatriangle(int b,int h)
+    {
+        return 0.5*arearectangle(b,h);
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Rectangle r=new Rectangle();
+        System.out.println(r.arearectangle(10,20));
+        Triangle t=new Triangle();
+        System.out.println(t.areatriangle(33,37));
+    }
+}
+
+/* Hierarchical inheritance*/
+class Rectangle
+{
+    int arearectangle(int l,int b)
+    {
+        return (l*b);
+    }
+}
+class Triangle extends Rectangle
+{
+    double areatriangle(int b,int h)
+    {
+        return 0.5*arearectangle(b,h);
+    }
+}
+class Ellipse extends Rectangle
+{
+    double areaellipse(int a,int b)
+    {
+        return 3.14*arearectangle(a,b);
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Rectangle r=new Rectangle();
+        System.out.println(r.arearectangle(10,20));
+        Triangle t=new Triangle();
+        System.out.println(t.areatriangle(33,37));
+        Ellipse e=new Ellipse();
+        System.out.println(e.areaellipse(34,12));
+    }
+}
+
+class A
+{
+     int x=50;
+    void dispa()
+    {
+        System.out.println("Class A:"+x);
+    }
+}
+class B extends A
+{
+    int y=100;
+    void dispb()
+    {
+        System.out.println("Class B: "+y);
+    }
+}
+class C extends B
+{
+    int z=150;
+    void dispc()
+    {
+        dispa();
+        System.out.println("Class C: "+z);
+    }
+}
+public class Main
+{
+    public static void main(String a[])
+    {
+        C obj=new C();
+        System.out.println(obj.x);
+        System.out.println(obj.y);
+        obj.dispb();
+        obj.dispa();
+        obj.dispc();
+    }
+}
+
